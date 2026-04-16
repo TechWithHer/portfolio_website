@@ -27,32 +27,29 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-        I orchestrate seamless cloud infrastructures
+       Building systems that scale, heal, and ship fast
       </AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            My expertise lies in building and maintaining robust cloud infrastructure and automated deployment pipelines. 
-            I specialize in creating scalable, reliable, and secure systems that empower businesses to deliver value 
-            faster. From containerization to infrastructure as code, I transform complex deployment processes into 
-            streamlined operations.
+            DevOps Engineer with 2+ years of hands-on experience, backed by 10+ years across IT spanning technical writing, project management, and system monitoring. 
+            This diverse foundation allows me to approach DevOps beyond just tools—focusing on clarity, system reliability, and end-to-end delivery efficiency. I specialize in building scalable, production-grade systems that prioritize automation, observability, and performance.
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            Since diving into DevOps practices in 2019, I&apos;ve continuously evolved my skillset, mastering various cloud 
-            platforms and automation tools. I&apos;ve developed a deep understanding of CI/CD practices, monitoring solutions, 
-            and security implementations, ensuring systems run efficiently and securely in production environments.
+            I focus on infrastructure that doesn’t just work—but adapts. From CI/CD pipelines to cloud-native environments, I bridge the gap between development velocity and operational stability.
+            With a systems-thinking mindset, I optimize not just pipelines and infrastructure, but the entire software delivery lifecycle.
           </AnimatedBody>
           <AnimatedBody className="inline leading-[34px] md:leading-[39px]">
-            Every infrastructure challenge presents an opportunity to innovate and implement best practices. I&apos;m passionate 
-            about creating maintainable, scalable solutions that help teams deliver software more efficiently. Want to know more? Here&apos;s <br className="hidden md:block" />
+            I’m particularly interested in the future of DevOps—intelligent automation, self-healing systems, and infrastructure that anticipates failure before it happens—and I actively build towards that direction.
+            Want to know more? Here&apos;s <br className="hidden md:block" />
             <Link
               className="underline"
               href={
                 "https://drive.google.com/file/d/link to your drive uploaded resume"
               }
             >
-              my resume
+              Explore My Work in Detail
             </Link>
             .
           </AnimatedBody>
