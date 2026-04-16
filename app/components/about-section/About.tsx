@@ -68,7 +68,7 @@ export default function About() {
               Cloud & Infrastructure
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              AWS, Azure, Docker, Kubernetes, Terraform, Ansible, Linux, Shell Scripting, Infrastructure as Code (IaC).
+              AWS, Docker, Kubernetes, Terraform, Ansible, Linux, Shell Scripting, Infrastructure as Code (IaC).
             </AnimatedBody>
           </div>
           <div>
@@ -80,7 +80,7 @@ export default function About() {
               CI/CD & Automation
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Jenkins, GitHub Actions, GitLab CI, ArgoCD, Helm, Python, Bash, Configuration Management.
+              Jenkins, GitHub Actions, GitLab CI, ArgoCD, Python, Bash, Configuration Management.
             </AnimatedBody>
           </div>
           <div>
@@ -92,7 +92,7 @@ export default function About() {
               Monitoring & Security
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Prometheus, Grafana, ELK Stack, HashiCorp Vault, Security Best Practices, SSL/TLS, IAM.
+              Prometheus, Grafana, Security Best Practices, SSL/TLS, IAM.
             </AnimatedBody>
           </div>
         </div>
