@@ -57,15 +57,15 @@ export default function Header() {
           <div className="gap-5 text-xl hidden sm:flex">
             <Link
               target="_blank"
-              href="https://linkedin.com/in/your_username"
+              href="https://www.linkedin.com/in/the-ayushi-singh/"
             >
               <Icon icon="hugeicons:linkedin-01" />
             </Link>
-            <Link target="_blank" href="https://github.com/your_username">
+            <Link target="_blank" href="https://github.com/TechWithHer">
               <Icon icon="hugeicons:github" />
             </Link>
-            <Link target="_blank" href="https://x.com/your_username">
-              <Icon icon="akar-icons:x-fill" />
+            <Link target="_blank" href="https://ambitious-yam-b71.notion.site/Learn-DevOps-with-TechWithHer-d60df188b81e8221a5570156f5f8b477?source=copy_link">
+              <Icon icon="akar-icons:notion-fill" />
             </Link>
           </div>
         </div>

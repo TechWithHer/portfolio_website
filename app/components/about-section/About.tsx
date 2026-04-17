@@ -46,7 +46,7 @@ export default function About() {
             <Link
               className="underline"
               href={
-                "https://drive.google.com/file/d/link to your drive uploaded resume"
+                "https://drive.google.com/drive/folders/1WpA0ztuHqx7mwZDyMPl-HPruEFyoxs0-?usp=sharing to your drive uploaded resume"
               }
             >
               Explore My Work in Detail
