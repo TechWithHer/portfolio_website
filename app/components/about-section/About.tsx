@@ -33,7 +33,7 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            DevOps Engineer with 2+ years of hands-on experience, backed by 10+ years across IT spanning technical writing, project management, and system monitoring. 
+            DevOps Engineer with 2+ years of hands-on experience, backed by 8+ years across IT spanning technical writing, project management, and system monitoring. 
             This diverse foundation allows me to approach DevOps beyond just tools—focusing on clarity, system reliability, and end-to-end delivery efficiency. I specialize in building scalable, production-grade systems that prioritize automation, observability, and performance.
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
@@ -44,11 +44,11 @@ export default function About() {
             I’m particularly interested in the future of DevOps—intelligent automation, self-healing systems, and infrastructure that anticipates failure before it happens—and I actively build towards that direction.
             Want to know more? Here&apos;s <br className="hidden md:block" />
             <Link
+              href="https://drive.google.com/drive/folders/1WpA0ztuHqx7mwZDyMPl-HPruEFyoxs0-?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline"
-              href={
-                "https://drive.google.com/drive/folders/1WpA0ztuHqx7mwZDyMPl-HPruEFyoxs0-?usp=sharing to your drive uploaded resume"
-              }
-            >
+              >
               Explore My Work in Detail
             </Link>
             .
