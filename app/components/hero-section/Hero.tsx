@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import {
-  delay,
   easeIn,
   easeInOut,
   motion,
@@ -44,6 +43,7 @@ export default function Hero() {
   const { setSectionInView } = useView();
 
   const imgRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: imgRef,
   });
@@ -65,6 +65,7 @@ export default function Hero() {
       className="pt-36 sm:pt-0 flex flex-col sm:flex-row h-dvh items-center gap-6 sm:justify-between"
       id="home"
     >
+      {/* TEXT SECTION */}
       <div className="text sm:w-[60%]">
         <motion.div
           className="grid grid-cols-9 w-fit smm:flex gap-2 mb-2 xl:mb-6"
@@ -75,6 +76,7 @@ export default function Hero() {
           <p className="text-white/60 text-xl smm:text-2xl mb-3 smm:mb-0 lg:text-3xl col-span-6">
             Hey, there
           </p>
+
           <motion.div
             animate={handWaveAnimation}
             style={{ transformOrigin: "bottom right" }}
@@ -88,6 +90,7 @@ export default function Hero() {
             />
           </motion.div>
         </motion.div>
+
         <motion.h1
           className="text-[32px] smm:text-[40px] md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-bold"
           initial={{ opacity: 0 }}
@@ -95,7 +98,7 @@ export default function Hero() {
         >
           <p className="text-white/60 inline">I&apos;m </p>
           <span className="bg-gradient-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
-          Ayushi Singh
+            Ayushi Singh
           </span>
           <p>a DevOps Engineer</p>
         </motion.h1>
@@ -103,18 +106,18 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={animateIn2}
-          className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
+          className="text-white/40 text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6"
         >
           currently focused on scaling infra and reducing the workload.
         </motion.p>
       </div>
 
-      {/* IMAGE */}
-      <div data-blobity-tooltip="Soft man">
+      {/* IMAGE SECTION (FIXED ASPECT + CLEAN CURSOR TOOLTIP) */}
+      <div data-blobity-tooltip="Ayushi Singh">
         <motion.div
           ref={imgRef}
           style={{ rotate }}
-          className="h-image flex items-center w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] justify-center relative"
+          className="relative w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] flex items-center justify-center overflow-hidden rounded-xl"
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
@@ -122,8 +125,8 @@ export default function Hero() {
             src="/image.png"
             priority
             fill
-            alt="Ade's picture"
-            className="bg-image-radial px-10 pt-20"
+            alt="Ayushi Singh"
+            className="object-cover px-10 pt-20"
           />
         </motion.div>
       </div>
