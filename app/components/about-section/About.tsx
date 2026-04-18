@@ -58,7 +58,7 @@ export default function About() {
         <div className="grid grid-cols-1 gap-4">
           <div>
             <AnimatedTitle
-              wordSpace={"mr-[0.5ch]"
+              wordSpace={"mr-[0.5ch]"}
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
