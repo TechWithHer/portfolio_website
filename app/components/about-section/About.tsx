@@ -27,7 +27,7 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-       Building systems that scale, heal, ship fast without security tradeoffs.
+       Building systems that scale, heal, and ship fast
       </AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
@@ -45,7 +45,7 @@ export default function About() {
             Want to know more? Here&apos;s <br className="hidden md:block" />
             <Link
               href="https://drive.google.com/drive/folders/1WpA0ztuHqx7mwZDyMPl-HPruEFyoxs0-?usp=sharing"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="underline"
               >
