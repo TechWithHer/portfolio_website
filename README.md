@@ -4,15 +4,15 @@ A modern, responsive portfolio website built with Next.js 14, React 18, and Tail
 
 ## Features
 
-- 🚀 Built with Next.js 14 and React 18
-- 💨 Tailwind CSS for styling
-- 🎭 Framer Motion animations
-- 📱 Fully responsive design
-- 🌓 Custom cursor effects with Blobity
-- 📧 Contact form integration with EmailJS
-- ⚡ Optimized with Vercel Analytics and Speed Insights
-- 🎨 Modern and clean UI/UX
-- 🔍 SEO optimized
+- Built with Next.js 14 and React 18
+- Tailwind CSS for styling
+- Framer Motion animations
+- Fully responsive design
+- Custom cursor effects with Blobity
+- Contact form integration with EmailJS
+- Optimized with Vercel Analytics and Speed Insights
+- Modern and clean UI/UX
+- SEO optimized
 
 ## Gallery
 
