@@ -63,7 +63,7 @@ export default function Works() {
           about={work.about}
           stack={work.stack}
         />
-      ))}
+      ))} 
 
       <Timeline />
     </section>

@@ -13,14 +13,12 @@ export default function FolioCard({
   title,
   img,
   gitLink,
-  liveLink,
   about,
   stack,
 }: {
   img: string;
   title: string;
   gitLink?: string;
-  liveLink: string;
   about: string;
   stack: string[];
 }) {
@@ -50,16 +48,6 @@ export default function FolioCard({
             {title}
           </h2>
           <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
-            <Link
-              href={liveLink}
-              className="rounded-full bg-icon-radial p-3 hover:bg-red"
-              target="_blank"
-              aria-label="View Github Repo"
-              data-blobity-radius="34"
-              data-blobity-magnetic="true"
-            >
-              <Icon icon="line-md:external-link-rounded" />
-            </Link>
             <Link
               href={`${gitLink ? gitLink : "#"}`}
               className="rounded-full bg-icon-radial p-3"
