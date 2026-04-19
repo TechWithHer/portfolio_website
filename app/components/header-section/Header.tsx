@@ -65,8 +65,9 @@ export default function Header() {
               <Icon icon="hugeicons:github" />
             </Link>
             <Link target="_blank" href="https://ambitious-yam-b71.notion.site/Learn-DevOps-with-TechWithHer-d60df188b81e8221a5570156f5f8b477?source=copy_link">
-              <Icon icon="hugeicons:notion" />
+              <Icon icon="simple-icons:notion" className="hover:scale-110 transition" />
             </Link>
+            
           </div>
         </div>
       </div>
