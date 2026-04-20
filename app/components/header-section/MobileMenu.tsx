@@ -73,7 +73,7 @@ export default function MobileMenu({
             href="https://ambitious-yam-b71.notion.site/Learn-DevOps-with-TechWithHer-d60df188b81e8221a5570156f5f8b477?source=copy_link"
             data-blobity-radius="10"
           >
-            <Icon icon="hugeicons:notion" />
+            <Icon icon="simple-icons:notion" className="text-white" />
           </Link>
         </div>
       </div>
