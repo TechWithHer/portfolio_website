@@ -1,112 +1,163 @@
-# Community Portfolio
+# Portfolio Website (Personal)
 
-A modern, responsive portfolio website built with Next.js 14, React 18, and Tailwind CSS. Features smooth animations powered by Framer Motion and a beautiful, interactive UI.
+A production-ready portfolio application built with Next.js and React, designed with a DevOps-first mindset—focusing on automation, deployment pipelines, and maintainable infrastructure.
 
-## Features
+## Overview
 
-- Built with Next.js 14 and React 18
-- Tailwind CSS for styling
-- Framer Motion animations
-- Fully responsive design
-- Custom cursor effects with Blobity
-- Contact form integration with EmailJS
-- Optimized with Vercel Analytics and Speed Insights
-- Modern and clean UI/UX
-- SEO optimized
+This project goes beyond a typical frontend portfolio. It demonstrates how modern web applications can be built, deployed, and maintained using practical DevOps principles—even on a shared hosting environment (Hostinger).
 
-## Gallery
+The goal is simple: **treat even a personal project like a production system.**
 
-![Portfolio Screenshot1](./community_project_demo_1.png)
-![Portfolio Screenshot2](./community_project_demo_2.png)
+## Tech Stack
 
-## Prerequisites
+* Next.js 14
+* React 18
+* Tailwind CSS
+* Framer Motion
+* EmailJS
+* Docker
 
-Before you begin, ensure you have the following installed:
-- Node.js (v18 or higher)
-- npm
+## Key Capabilities
 
-## Getting Started
+### Application Layer
 
-1. Clone the repository:
+* Responsive and accessible UI
+* Component-based architecture using Next.js App Router
+* Optimized performance and SEO
+* Contact form integrated with EmailJS
+
+### DevOps & Infrastructure Thinking
+
+* Version-controlled codebase with GitHub
+* Automated deployment pipeline (Git-based deployment)
+* Secure environment variable management
+* Containerization support using Docker
+* Production build optimization
+
+## Preview
+
+![Screenshot 1](./community_project_demo_1.png)
+![Screenshot 2](./community_project_demo_2.png)
+
+## Local Development
+
+### Prerequisites
+
+* Node.js (v18 or higher)
+* npm
+
+### Setup
+
 ```bash
 git clone https://github.com/iemafzalhassan/community_project.git
-```
-
-2. Navigate to the project directory:
-```bash
 cd community_project
-```
-
-3. Install dependencies:
-```bash
 npm install
 ```
 
-4. Create a `.env` file in the root directory and add your environment variables:
+### Environment Configuration
+
+All sensitive configuration (such as EmailJS credentials) is managed using environment variables.
+
+Create a `.env` file:
+
 ```env
-# Example environment variables (check .env.example)
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-5. Start the development server:
+These variables are not hardcoded in the application and are securely injected at runtime.
+
+### Run
+
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+## Build & Runtime
+
+```bash
+npm run build
+npm start
+```
+
+## Containerization
+
+```bash
+docker build -t community-portfolio .
+docker run -p 3000:3000 community-portfolio
+```
+
+This ensures consistent environments across development and deployment.
+
+## Deployment & CI/CD
+
+**Live Website:** [https://www.ayushisingh.com](https://www.ayushisingh.com)
+
+This project is deployed on a Hostinger shared server using an automated Git-based deployment workflow.
+
+### Pipeline Flow
+
+1. Code is pushed to GitHub
+2. Hostinger auto-deployment detects changes
+3. Build process is triggered on the server
+4. Latest version is deployed to production
+
+### DevOps Concepts Applied
+
+* **Continuous Integration (CI)**
+  Code changes are continuously integrated into the main branch
+
+* **Continuous Deployment (CD)**
+  Every push automatically updates the live application
+
+* **Environment Variable Management**
+  All secrets (EmailJS keys, configuration values) are stored securely using environment variables instead of being hardcoded
+
+* **Service Integration (EmailJS)**
+  Email functionality is handled via EmailJS, integrated using environment-based configuration for security and flexibility
+
+* **Immutable Deployment Mindset**
+  Each deployment replaces the previous version cleanly
+
+* **Infrastructure Adaptation**
+  CI/CD practices implemented effectively within shared hosting constraints
 
 ## Project Structure
 
 ```
 community_portfolio/
-├── app/                    # Next.js app directory
-│   ├── components/        # React components
-│   ├── contexts/         # React contexts
-│   └── utils/           # Utility functions
-├── public/              # Static assets
-└── contexts/           # Global context providers
+├── app/
+│   ├── components/
+│   ├── contexts/
+│   └── utils/
+├── public/
+└── contexts/
 ```
 
-## Build and Deployment
+## Why This Project Matters
 
-To build the project for production:
+Most portfolio projects stop at “it works locally.”
+This project demonstrates:
 
-```bash
-npm run build
-```
+* How applications are deployed and maintained
+* How secrets are managed securely
+* How third-party services are integrated safely
+* How CI/CD can be implemented even without full cloud infrastructure
 
-To start the production server:
-
-```bash
-npm start
-```
-# Build the image
-```bash
-docker build -t community-portfolio .
-```
-
-# Run the container
-```bash
-docker run -p 3000:3000 community-portfolio
-```
-
-
+It reflects practical, real-world DevOps thinking applied to a frontend system.
 
 ## Contributing
 
-This is an open-source project, and contributions are welcome! Feel free to:
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Commit changes
+4. Push and open a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License
 
 ## Feedback
 
-If you have any feedback or suggestions, please open an issue in the repository. We appreciate your input!
+Open an issue for suggestions or improvements.
