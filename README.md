@@ -17,6 +17,10 @@ The goal is simple: **treat even a personal project like a production system.**
 * EmailJS
 * Docker
 
+## External Platforms: 
+* EmailJS
+* Hostinger
+
 ## Key Capabilities
 
 ### Application Layer
@@ -36,8 +40,12 @@ The goal is simple: **treat even a personal project like a production system.**
 
 ## Preview
 
-![Screenshot 1](./community_project_demo_1.png)
-![Screenshot 2](./community_project_demo_2.png)
+![Screenshot 1](./websiteview1.png)
+![Screenshot 2](./websiteview2.png)
+
+## Hostinger Dashboard
+
+![Screenshot 1](./hostinger_dashboard.png)
 
 ## Local Development
 
@@ -49,8 +57,8 @@ The goal is simple: **treat even a personal project like a production system.**
 ### Setup
 
 ```bash
-git clone https://github.com/iemafzalhassan/community_project.git
-cd community_project
+git clone https://github.com/techwithher/portfolio_website.git
+cd portfolio_website
 npm install
 ```
 
@@ -84,15 +92,15 @@ npm start
 ## Containerization
 
 ```bash
-docker build -t community-portfolio .
-docker run -p 3000:3000 community-portfolio
+docker build -t portfolio_Website .
+docker run -p 3000:3000 portfolio_Website
 ```
 
 This ensures consistent environments across development and deployment.
 
 ## Deployment & CI/CD
 
-**Live Website:** [https://www.ayushisingh.com](https://www.ayushisingh.com)
+**Live Website:** [www.ayushisingh.com](https://www.ayushisingh.com)
 
 This project is deployed on a Hostinger shared server using an automated Git-based deployment workflow.
 
