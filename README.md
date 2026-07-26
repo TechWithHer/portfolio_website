@@ -111,6 +111,60 @@ This project is deployed on a Hostinger shared server using an automated Git-bas
 3. Build process is triggered on the server
 4. Latest version is deployed to production
 
+### Docker Build Flow 
+
+                    Source Code
+                         │
+                         ▼
+                package.json + package-lock.json
+                         │
+                         ▼
+                Docker Build Starts
+                         │
+                         ▼
+        ┌─────────────────────────────────┐
+        │      Builder Stage              │
+        │─────────────────────────────────│
+        │ Base Image: node:22-alpine      │
+        │                                 │
+        │ COPY package*.json              │
+        │ npm ci                          │
+        │ COPY source code                │
+        │ npm run build                   │
+        │                                 │
+        │ Produces Standalone Build       │
+        └─────────────────────────────────┘
+                         │
+                         ▼
+        ┌─────────────────────────────────┐
+        │       Runner Stage              │
+        │─────────────────────────────────│
+        │ Base Image: node:22-alpine      │
+        │                                 │
+        │ Copy standalone runtime         │
+        │ Copy static assets              │
+        │ Copy public folder              │
+        │ NODE_ENV=production             │
+        │ node server.js                  │
+        └─────────────────────────────────┘
+                         │
+                         ▼
+               Optimized Docker Image
+                         │
+                         ▼
+           Hostinger Auto Deployment (CD)
+                         │
+                         ▼
+               https://ayushisingh.com
+
+### Docker Build Strategy
+
+The application uses a multi-stage Docker build to separate the build environment from the runtime environment.
+
+During the builder stage, dependencies are installed using npm ci, and the Next.js application is compiled into an optimized standalone production build.
+
+The runner stage starts from a clean base image and copies only the runtime artifacts required to execute the application. This minimizes the final image size, reduces the attack surface, and follows containerization best practices.
+
 ### DevOps Concepts Applied
 
 * **Continuous Integration (CI)**
