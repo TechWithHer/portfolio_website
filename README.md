@@ -110,8 +110,30 @@ This project is deployed on a Hostinger shared server using an automated Git-bas
 2. Hostinger auto-deployment detects changes
 3. Build process is triggered on the server
 4. Latest version is deployed to production
+### A) High Level Architechture 
 
-### Docker Build Flow 
+Developer
+
+↓
+
+GitHub Repository
+
+↓
+
+GitHub Actions (CI)
+
+↓
+
+Hostinger Auto Deployment (CD)
+
+↓
+
+Docker Container
+
+↓
+
+Portfolio Website
+### B) Docker Build Flow 
 
                     Source Code
                          │
@@ -164,6 +186,46 @@ The application uses a multi-stage Docker build to separate the build environmen
 During the builder stage, dependencies are installed using npm ci, and the Next.js application is compiled into an optimized standalone production build.
 
 The runner stage starts from a clean base image and copies only the runtime artifacts required to execute the application. This minimizes the final image size, reduces the attack surface, and follows containerization best practices.
+
+### C) CI/CD Flow
+
+git push
+
+↓
+
+GitHub Actions
+
+↓
+
+Install Dependencies
+
+↓
+
+ESLint
+
+↓
+
+Next.js Build
+
+↓
+
+Docker Build
+
+↓
+
+Trivy Security Scan
+
+↓
+
+Merge to main
+
+↓
+
+Hostinger Auto Deploy
+
+↓
+
+Production
 
 ### DevOps Concepts Applied
 
