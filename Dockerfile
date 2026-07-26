@@ -1,26 +1,28 @@
-#Base image 0S
-FROM node:25-alpine3.22 AS builder
+# ---------- Builder ----------
+FROM node:22-alpine AS builder
 
-#Working Directory
 WORKDIR /app
 
-#COPY
 COPY package*.json ./
+
 RUN npm ci
 
 COPY . .
 
-#RUN
-RUN apk add --no-cache python3 make g++
 RUN npm run build
 
+
+# ---------- Runner ----------
 FROM node:22-alpine AS runner
+
 WORKDIR /app
-COPY --from=builder /app ./
-#EXPOSE 
+
+ENV NODE_ENV=production
+
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
+
 EXPOSE 3000
 
-#CMD
-CMD ["npm","start"]
-
-
+CMD ["node", "server.js"]
