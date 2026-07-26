@@ -31,3 +31,12 @@ jobs:
 
       - name: Build Next.js 
         run: docker build -t ayushi-portfolio .
+
+      - name: Run Trivy Security Scan
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: 'ayushi-portfolio'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          severity: 'CRITICAL,HIGH'
