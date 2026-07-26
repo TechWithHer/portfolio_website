@@ -29,5 +29,5 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Build Next.js
-        run: npm run build
+      - name: Build Next.js 
+        run: docker build -t ayushi-portfolio .
