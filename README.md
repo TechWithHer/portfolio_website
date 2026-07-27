@@ -21,6 +21,7 @@ The goal is simple: **treat even a personal project like a production system.**
 * Framer Motion
 * EmailJS
 * Docker
+* Trivy
 
 ## Operational Endpoints
 
