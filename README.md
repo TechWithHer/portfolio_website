@@ -1,4 +1,4 @@
-# Portfolio Website (Personal) - ayushisingh.com
+# Personal Portfolio Website with DevOps Principals - ayushisingh.com
 
 Designed and deployed a production-ready Next.js application with GitHub Actions-based CI, automated Git deployment to Hostinger, multi-stage Docker containerization, Trivy container vulnerability scanning, operational health/version APIs, and secure environment variable management.
 ## Overview
