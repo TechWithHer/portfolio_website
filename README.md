@@ -1,7 +1,6 @@
-# Portfolio Website (Personal) - www.ayushisingh.com
+# Portfolio Website (Personal) - ayushisingh.com
 
-A production-ready portfolio application built with Next.js and React, designed with a DevOps-first mindset—focusing on automation, deployment pipelines, and maintainable infrastructure.
-
+Designed and deployed a production-ready Next.js application with GitHub Actions-based CI, automated Git deployment to Hostinger, multi-stage Docker containerization, Trivy container vulnerability scanning, operational health/version APIs, and secure environment variable management.
 ## Overview
 
 This project goes beyond a typical frontend portfolio. It demonstrates how modern web applications can be built, deployed, and maintained using practical DevOps principles—even on a shared hosting environment (Hostinger).
