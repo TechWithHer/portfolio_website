@@ -17,6 +17,13 @@ The goal is simple: **treat even a personal project like a production system.**
 * EmailJS
 * Docker
 
+## Operational Endpoints
+
+| Endpoint | Purpose |
+|----------|---------|
+| `/api/health` | Health status used for monitoring and readiness checks |
+| `/api/version` | Build metadata including version, commit, branch, and build time |
+
 ## External Platforms: 
 * EmailJS
 * Hostinger
