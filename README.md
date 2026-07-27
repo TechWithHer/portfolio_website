@@ -1,4 +1,10 @@
-# Personal Portfolio Website with DevOps Principals - ayushisingh.com
+# Personal Portfolio Website with DevOps Principles - ayushisingh.com
+
+![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![React](https://img.shields.io/badge/React-18-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![GitHub Actions](https://img.shields.io/badge/CI-GitHub_Actions-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Designed and deployed a production-ready Next.js application with GitHub Actions-based CI, automated Git deployment to Hostinger, multi-stage Docker containerization, Trivy container vulnerability scanning, operational health/version APIs, and secure environment variable management.
 ## Overview
