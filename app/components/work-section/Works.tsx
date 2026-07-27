@@ -13,27 +13,27 @@ export default function Works() {
 
   const works = [
          {
-          title: "oil-price-dashboard",
-          gitLink: "https://github.com/TechWithHer/",
+          title: "Enterprise Amazon S3 Platform",
+          gitLink: "https://github.com/TechWithHer/cloudmart-enterprise-storage-platform",
           about:
-            "Built a cloud-native data pipeline to solve the lack of real-time and historical visibility into fluctuating oil prices. Designed an event-driven architecture using AWS Lambda, EventBridge, and S3 for automated ingestion and storage, with Athena for querying. Delivered a lightweight dashboard using JavaScript and Chart.js with CI/CD via GitHub Actions. Achieved ~99% pipeline reliability, reduced manual data handling by 90%, and enabled near real-time insights for better decision-making.",
-          stack: ["aws", "lambda", "s3", "eventbridge", "athena", "github actions", "python", "javascript", "chart.js"],
+            "Designed and deployed secure enterprise S3 platform managing 500+ GB of sensitive data across 8 business units with encryption (AES-256), versioning, Object Lock, HTTPS-only policies, and CloudTrail auditing for compliance\n• Implemented intelligent lifecycle management and storage class optimization, achieving 60% cost reduction through automated tiering to S3 Glacier\n• Designed and implemented a disaster recovery strategy using Amazon S3 Cross-Region Replication (Singapore → Sydney), documenting recovery procedures and validating replicated objects to improve storage resilience and support defined RTO/RPO objectives.\n• Developed Lambda-based event-driven workflows with SNS/SQS integration, eliminating 5 hours/week of manual infrastructure tasks and enabling real-time forensic analysis capabilities",
+          stack: ["AWS S3", "Eventbridge", "Lambda", "SNS", "SQS", "CloudTrail", "CloudWatch", "Lifecycle Rules", "S3 Replication", "Object Lock", "Terraform", "IAM Management"],
           img: "/project.png",
       },
       {
-        title: "cicd-pipeline-automation",
-        gitLink: "https://github.com/TechWithHer/",
+        title: "Multi-Environment Infrastructure using Terraform",
+        gitLink: "https://github.com/TechWithHer/industrial-air-quality-platform-mvp",
         about:
-          "Engineered reusable CI/CD pipelines to eliminate inconsistent deployments and manual release overhead. Implemented workflows using GitHub Actions and Jenkins, integrated Docker-based containerization, and automated deployments on AWS (EC2/S3). Reduced deployment time by ~70%, improved release consistency, and minimized manual intervention across environments.",
-        stack: ["github actions", "jenkins", "docker", "aws", "ec2", "s3", "git"],
+          "Architected and implemented standardized Infrastructure-as-Code (IaC) framework using Terraform modules and CloudFormation templates for multi-environment (Dev, Staging, Prod) with remote state management via DynamoDB\n• Automated infrastructure provisioning and deployments using GitHub Actions CI/CD pipelines with approval gates, reducing environment spin-up time from days to under 30 minutes\n• Established centralized governance with CloudWatch monitoring, SNS notifications\n• Achieved zero configuration drift across 3+ environments through automated drift detection and improved infrastructure reliability, significantly reducing production incidents",
+        stack: ["Terraform", "AWS", "GitHub Actions", "CloudFormation", "CloudWatch", "SNS", "DynamoDB"],
         img: "/project.png",
       },
       {
-        title: "ecommerce-gitops-platform",
+        title: "Secure CI/CD Pipeline with Shift-Left Security (Various Projects)",
         gitLink: "https://github.com/TechWithHer/",
         about:
-          "Implemented a fully automated GitOps-based deployment system to address inconsistencies in manual Kubernetes deployments. Configured Argo CD for continuous delivery, deployed workloads using Helm charts, and integrated NGINX Ingress with Cert-Manager for automated TLS. Achieved self-healing deployments, 100% version-controlled infrastructure, and eliminated manual release overhead.",
-        stack: ["kubernetes", "argo cd", "helm", "nginx ingress", "cert-manager", "docker", "github"],
+          "Built CI/CD pipelines using GitHub Actions and Jenkins. Integrated SonarQube and Trivy into deployment workflows to improve code quality and security validation. Automated application build, testing, and deployment processes. Improved deployment consistency through Infrastructure as Code and pipeline automation.",
+        stack: ["GitHub Actions", "Jenkins", "Terraform", "Docker", "SonarQube", "Trivy", "AWS" ],
         img: "/project.png",
       }
   ];

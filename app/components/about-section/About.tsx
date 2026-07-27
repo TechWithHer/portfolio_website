@@ -33,12 +33,10 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            DevOps Engineer with 2+ years of hands-on experience, backed by 8+ years across IT spanning technical writing, project management, and system monitoring. 
-            This diverse foundation allows me to approach DevOps beyond just tools—focusing on clarity, system reliability, and end-to-end delivery efficiency. I specialize in building scalable, production-grade systems that prioritize automation, observability, and performance.
+            Cloud DevOps Engineer with 3+ years of experience supporting AWS cloud infrastructure, Infrastructure as Code, CI/CD automation, and cloud operations. Hands-on experience with Amazon S3, IAM, Terraform, GitHub Actions, Jenkins, Lambda, and CloudWatch to build secure, reliable, and scalable cloud environments.
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            I focus on infrastructure that doesn’t just work—but adapts. From CI/CD pipelines to cloud-native environments, I bridge the gap between development velocity and operational stability.
-            With a systems-thinking mindset, I optimize not just pipelines and infrastructure, but the entire software delivery lifecycle.
+            Experienced in cloud governance, storage optimization, access management, and deployment automation. Backed by 6+ years of prior experience in software delivery, technical coordination, and stakeholder management, enabling effective collaboration between engineering and business teams.
           </AnimatedBody>
           <AnimatedBody className="inline leading-[34px] md:leading-[39px]">
             I’m particularly interested in the future of DevOps—intelligent automation, self-healing systems, and infrastructure that anticipates failure before it happens—and I actively build towards that direction.
