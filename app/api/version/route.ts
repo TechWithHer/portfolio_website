@@ -1,12 +1,10 @@
-import { NextResponse } from "next/server";
+import { promises as fs } from "fs";
+import path from "path";
 
 export async function GET() {
-  return NextResponse.json({
-    application: "Portfolio Website",
-    version: process.env.npm_package_version || "1.0.0",
-    environment: process.env.NODE_ENV,
-    buildTime: process.env.BUILD_TIME || "Local Build",
-    commit: process.env.GIT_COMMIT || "Development",
-    branch: process.env.GIT_BRANCH || "local",
-  });
+  const file = path.join(process.cwd(), "public", "version.json");
+
+  const version = JSON.parse(await fs.readFile(file, "utf8"));
+
+  return Response.json(version);
 }

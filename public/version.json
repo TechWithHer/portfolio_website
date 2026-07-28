@@ -1,0 +1,12 @@
+{
+  "application": "Ayushi Portfolio",
+  "version": "0.1.0",
+  "commit": "3ebd3d5",
+  "branch": "main",
+  "buildTime": "2026-07-28T10:35:48.621Z",
+  "environment": "Production",
+  "ci": "GitHub Actions",
+  "cd": "Hostinger Git Deployment",
+  "containerized": true,
+  "securityScan": "Trivy"
+}
