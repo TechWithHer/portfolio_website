@@ -40,3 +40,35 @@ jobs:
           exit-code: '0'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
+      
+      - name: Start Docker Container
+        run: |
+          docker run -d \
+            --name portfolio \
+            -p 3000:3000 \
+            ayushi-portfolio
+
+      - name: Wait for application
+        run: |
+          for i in {1..30}; do
+            if curl -f http://localhost:3000/api/health; then
+              exit 0
+            fi
+            echo "Waiting for application..."
+            sleep 2
+          done
+          exit 1
+
+      - name: Smoke Test
+        run: |
+          echo "Checking Health..."
+          curl --fail http://localhost:3000/api/health
+
+          echo "Checking Version..."
+          curl --fail http://localhost:3000/api/version
+
+      - name: Cleanup
+        if: always()
+        run: |
+          docker stop portfolio
+          docker rm portfolio
