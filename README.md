@@ -53,12 +53,12 @@ The goal is simple: **treat even a personal project like a production system.**
 
 ## Preview
 
-![Screenshot 1](./websiteview1.png)
-![Screenshot 2](./websiteview2.png)
+![Screenshot 1](./screenshots/websiteview1.png)
+![Screenshot 2](./screenshots/websiteview2.png)
 
 ## Hostinger Dashboard
 
-![Screenshot 1](./hostinger_dashboard.png)
+![Screenshot 1](./screenshots/hostinger_dashboard.png)
 
 ## Local Development
 
