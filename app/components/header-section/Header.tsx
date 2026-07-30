@@ -64,7 +64,7 @@ export default function Header() {
             <Link target="_blank" href="https://github.com/TechWithHer">
               <Icon icon="hugeicons:github" />
             </Link>
-            <Link target="_blank" href="https://ambitious-yam-b71.notion.site/Learn-DevOps-with-TechWithHer-d60df188b81e8221a5570156f5f8b477?source=copy_link">
+            <Link target="_blank" href="https://ayushisingh.notion.site/Learn-Complete-DevOps-with-TechWithHer-d60df188b81e8221a5570156f5f8b477?pvs=73">
               <Icon icon="simple-icons:notion" className="hover:scale-110 transition" />
             </Link>
             
