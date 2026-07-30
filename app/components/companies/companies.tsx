@@ -17,9 +17,9 @@ export default function Companies() {
     <section id="companies" className="py-24 px-6">
       <div className="max-w-6xl mx-auto text-center">
 
-        <h2 className="text-4xl font-bold mb-4">
-          Organizations I've Worked With
-        </h2>
+      <h2 className="text-4xl font-bold mb-4">
+        Organizations I&apos;ve Worked With
+      </h2>          
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-14">
           Through full-time roles and independent consulting engagements.
